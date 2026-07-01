@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acción de Acceso a la Información Pública</title>
+    
+    <!-- Íconos de la página (Favicon) usando tu carpeta local favicon_io -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--ICONOS-->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="UDLA" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body class="bg-dark-custom">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-gold fw-bold d-flex align-items-center" href="#">
+                <img src="img/udla.jpg" alt="Logo UDLA" width="45" height="45" class="me-2 rounded-circle object-fit-cover">
+                Garantías Jurisdiccionales
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#derecho">Derecho Protegido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#procedimiento">Procedimiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#causales">Admisibilidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jurisprudencia">Jurisprudencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section (¿Qué es?) -->
+    <header id="inicio" class="hero-section d-flex flex-column position-relative">
+        <div class="overlay"></div>
+        
+        <!-- "my-auto" centra la tarjeta verticalmente, "pt-5" compensa la barra de navegación -->
+        <div class="container position-relative z-index-2 fade-in my-auto pt-5 pb-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <!-- Agregamos un "mt-5" para evitar que el texto toque el techo en celulares -->
+                    <div class="glass-card p-4 p-md-5 shadow-lg mt-5">
+                        <span class="badge bg-gold text-dark mb-3 px-3 py-2 fs-6 rounded-pill shadow-sm">
+                            <i class="fa-solid fa-landmark me-2"></i>Constitución del Ecuador
+                        </span>
+                        <h1 class="display-4 fw-bold text-white mb-4 text-shadow">Acción de Acceso a la Información Pública</h1>
+                        <p class="lead text-light mb-4 px-md-4">
+                            Es una garantía jurisdiccional prevista en la Constitución del Ecuador que permite a cualquier persona solicitar y obtener información que repose en instituciones públicas o privadas que administren recursos públicos o ejerzan funciones públicas.
+                        </p>
+                        <hr class="border-light opacity-50 w-50 mx-auto mb-4">
+                        <p class="text-white fs-5 font-italic mb-0">
+                            <strong>Finalidad:</strong> Garantizar la transparencia, el control ciudadano y el acceso a la información de interés público.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- "mt-auto" garantiza que este botón siempre se vaya al fondo del contenedor respetando el espacio -->
+        <div class="position-relative z-index-2 text-center mt-auto pb-4">
+            <a href="#derecho" class="text-white text-decoration-none" style="opacity: 0.9; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+                <span class="d-block mb-1 small text-uppercase letter-spacing text-gold">Explorar</span>
+                <i class="fa-solid fa-chevron-down fs-4 bounce text-gold"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Objeto o Derecho Protegido -->
+    <section id="derecho" class="py-5 bg-dark-custom text-white">
+        <div class="container py-5 fade-in">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold">Objeto y Derecho Protegido</h2>
+                <div class="bg-gold mx-auto mt-2" style="height: 3px; width: 60px;"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm info-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-solid fa-file-shield fa-3x text-gold mb-3"></i>
+                            <h4 class="card-title text-white">Base Legal</h4>
+                            <ul class="text-start mt-3 mb-0 text-light">
+                                <li><strong>Art. 18</strong> de la Constitución del Ecuador.</li>
+                                <li><strong>Art. 91</strong> de la Constitución del Ecuador.</li>
+                                <li>Ley Orgánica de Transparencia y Acceso a la Información Pública (LOTAIP).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm info-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-solid fa-magnifying-glass fa-3x text-gold mb-3"></i>
+                            <h4 class="card-title text-white">¿Qué comprende?</h4>
+                            <ul class="text-start mt-3 mb-0 text-light">
+                                <li>Buscar información pública.</li>
+                                <li>Solicitar información pública.</li>
+                                <li>Recibir información completa, veraz y oportuna.</li>
+                                <li>Conocer cómo actúan las instituciones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm info-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-solid fa-building-columns fa-3x text-gold mb-3"></i>
+                            <h4 class="card-title text-white">¿Qué es Información Pública?</h4>
+                            <ul class="text-start mt-3 mb-0 text-light">
+                                <li>Producida por entidades estatales.</li>
+                                <li>Encontrada en archivos, documentos o bases de datos públicas.</li>
+                                <li>Financiada con recursos públicos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedimiento (Línea de Tiempo Interactiva) -->
+    <section id="procedimiento" class="py-5 bg-dark-custom text-white">
+        <div class="container py-5 fade-in">
+            <div class="text-center mb-5">
+                <h2 class="text-gold fw-bold">Procedimiento</h2>
+                <p class="text-light">Pasos para la ejecución de la garantía jurisdiccional</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-gold text-dark"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-gold">1. Solicitud previa</h4>
+                        <p class="mb-0">La persona presenta una solicitud de información ante la entidad pública correspondiente.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-gold text-dark"><i class="fa-solid fa-ban"></i></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-gold">2. Negativa o falta de respuesta</h4>
+                        <p class="mb-2">La acción procede cuando:</p>
+                        <ul class="mb-0 small">
+                            <li>La entidad niega el acceso.</li>
+                            <li>La información entregada es incompleta.</li>
+                            <li>La entidad no responde en el plazo legal.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-gold text-dark"><i class="fa-solid fa-file-contract"></i></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-gold">3. Presentación de la acción</h4>
+                        <p class="mb-0">La persona presenta la demanda ante un juez competente.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-gold text-dark"><i class="fa-solid fa-gavel"></i></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-gold">4. Audiencia</h4>
+                        <p class="mb-0">El juez convoca a una audiencia para escuchar a las partes y analizar las pruebas presentadas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon bg-gold text-dark"><i class="fa-solid fa-check"></i></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-gold">5. Resolución</h4>
+                        <p class="mb-2">Si el juez determina que se vulneró el derecho:</p>
+                        <ul class="mb-0 small">
+                            <li>Ordenará la entrega inmediata de la información.</li>
+                            <li>Dispondrá medidas para garantizar el derecho.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admisibilidad e Improcedencia (Tarjetas Verdes y Rojas) -->
+    <section id="causales" class="py-5 bg-dark-custom">
+        <div class="container py-5 fade-in">
+            <div class="row align-items-stretch">
+                <div class="col-lg-6 mb-4 d-flex flex-column">
+                    <h3 class="text-success mb-4 text-center"><i class="fa-solid fa-circle-check me-2"></i>Causales de Admisibilidad</h3>
+                    <div class="card border-0 shadow-sm border-start border-success border-5 hover-zoom h-100 w-100">
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Existe una solicitud de información previa.</li>
+                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>La información solicitada tiene carácter público.</li>
+                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Se ha negado injustificadamente el acceso.</li>
+                                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>La entidad no ha respondido dentro del plazo legal.</li>
+                                <li><i class="fa-solid fa-check text-success me-2"></i>La información entregada es incompleta o alterada.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 d-flex flex-column">
+                    <h3 class="text-danger mb-4 text-center"><i class="fa-solid fa-circle-xmark me-2"></i>Causales de Improcedencia</h3>
+                    <div class="card border-0 shadow-sm border-start border-danger border-5 hover-zoom h-100 w-100">
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3"><i class="fa-solid fa-xmark text-danger me-2"></i>La información es reservada conforme a la Constitución y la ley.</li>
+                                <li class="mb-3"><i class="fa-solid fa-xmark text-danger me-2"></i>Es información confidencial que afecta derechos de terceros.</li>
+                                <li class="mb-3"><i class="fa-solid fa-xmark text-danger me-2"></i>La información no existe en los archivos de la institución.</li>
+                                <li><i class="fa-solid fa-xmark text-danger me-2"></i>Se utiliza la acción para fines distintos a la protección del derecho de acceso a la información pública.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jurisprudencia Destacada -->
+    <section id="jurisprudencia" class="py-5 bg-dark-custom text-white position-relative">
+        <div class="container py-5 fade-in">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 text-center">
+                    <i class="fa-solid fa-book-journal-whills fa-5x text-gold mb-3"></i>
+                    <h2 class="text-gold fw-bold">Jurisprudencia Importante</h2>
+                    <h4 class="text-light mt-3">Sentencia No. 107-17-SEP-CC</h4>
+                    <p class="text-light">Corte Constitucional del Ecuador</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-4 border border-gold rounded bg-dark shadow">
+                        <h5 class="text-gold mb-3"><i class="fa-solid fa-gavel me-2"></i>Importancia establecida por la Corte:</h5>
+                        <ul class="text-light">
+                            <li>El acceso a la información pública es un <strong>derecho fundamental</strong>.</li>
+                            <li>La regla general es la publicidad de la información.</li>
+                            <li>La reserva de información constituye una excepción y debe estar expresamente justificada.</li>
+                            <li>Las instituciones tienen la obligación de facilitar el acceso y no obstaculizarlo.</li>
+                        </ul>
+                        <hr class="border-secondary">
+                        <h5 class="text-gold mb-3 mt-3"><i class="fa-solid fa-eye me-2"></i>Alcance de la Garantía:</h5>
+                        <p class="fst-italic text-light">"Toda información en poder del Estado se presume pública, salvo las excepciones establecidas en la Constitución y la ley."</p>
+                        <p class="mb-0 text-muted small">Esto fortalece los principios de: Transparencia, Rendición de cuentas, Participación ciudadana y Control social.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusión e Importancia (Infografía) -->
+    <section id="conclusion" class="py-5 bg-dark-custom">
+        <div class="container py-5 fade-in">
+            <div class="text-center mb-5">
+                <h2 class="text-white fw-bold">Importancia de esta Garantía</h2>
+                <p class="lead text-white">¿Por qué es vital para nuestro país?</p>
+            </div>
+            
+            <div class="row text-center mb-5 g-4">
+                <div class="col-md">
+                    <div class="p-3">
+                        <i class="fa-solid fa-handcuffs fa-2x text-gold mb-2"></i>
+                        <div class="text-white mt-2"><h6>Combatir la corrupción</h6></div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="p-3">
+                        <i class="fa-solid fa-check-to-slot fa-2x text-gold mb-2"></i>
+                        <div class="text-white mt-2"><h6>Fortalecer la democracia</h6></div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="p-3">
+                        <i class="fa-solid fa-eye fa-2x text-gold mb-2"></i>
+                        <div class="text-white mt-2"><h6>Transparencia estatal</h6></div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="p-3">
+                        <i class="fa-solid fa-users fa-2x text-gold mb-2"></i>
+                        <div class="text-white mt-2"><h6>Control ciudadano</h6></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-gold text-dark border-0 shadow">
+                <div class="card-body p-4 p-md-5 text-center">
+                    <h3 class="fw-bold mb-3">Conclusión General</h3>
+                    <p class="lead mb-0">
+                        La Acción de Acceso a la Información Pública es una garantía constitucional que asegura que las instituciones públicas actúen con transparencia y rindan cuentas a la ciudadanía. Su objetivo principal es proteger el derecho fundamental de acceso a la información, permitiendo que cualquier persona conozca cómo se administran los recursos y decisiones del Estado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo de Trabajo (Carrusel 3D) -->
+    <section id="equipo" class="py-5 bg-dark-custom text-white border-top border-secondary overflow-hidden">
+        <div class="container py-5 fade-in">
+            <div class="text-center mb-5">
+                <h2 class="text-gold fw-bold">Nuestro Equipo de Trabajo</h2>
+                <p class="text-light">Desarrolladoras de este proyecto informativo</p>
+            </div>
+            
+            <!-- Contenedor del Carrusel 3D -->
+            <div class="team-carousel-wrapper position-relative mx-auto">
+                <div class="team-track d-flex justify-content-center align-items-center">
+                    
+                    <!-- Tarjeta Izquierda (Atrás) -->
+                    <div class="card team-card-3d prev-card border-0 text-center pb-3 shadow">
+                        <!-- Pon el src de tu primera foto aquí -->
+                        <img src="img/Amira Rosero.jpeg" class="card-img-top" alt="Estudiante 1">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-gold mb-0">Amira Rosero</h5>
+                            <p class="card-text small mt-1">Estudiante de Derecho</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Central (Adelante, Iluminada) -->
+                    <div class="card team-card-3d active-card border-0 text-center pb-3 shadow">
+                        <!-- Pon el src de tu segunda foto aquí -->
+                        <img src="img/Allison Balseca.jpeg" class="card-img-top" alt="Estudiante 2">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-gold mb-0">Allison Balseca</h5>
+                            <p class="card-text small mt-1">Estudiante de Derecho</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Derecha (Atrás) -->
+                    <div class="card team-card-3d next-card border-0 text-center pb-3 shadow">
+                        <!-- Pon el src de tu tercera foto aquí -->
+                        <img src="img/Naydeline Andrango.jpeg" class="card-img-top" alt="Estudiante 3">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title text-gold mb-0">Naydeline Andrango</h5>
+                            <p class="card-text small mt-1">Estudiante de Derecho</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botones de Control para cambiar las fotos -->
+                <button class="carousel-control-btn left-btn" onclick="moveCarousel('prev')">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-btn right-btn" onclick="moveCarousel('next')">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-custom text-center py-4">
+        <p class="mb-0 small text-white">© 2026 Proyecto Académico - Acción de Acceso a la Información Pública. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script JS Propio -->
+    <script src="script.js"></script>
+    <!-- Cursor Personalizado (Martillo) -->
+    <div id="gavel-cursor">
+        <i class="fa-solid fa-gavel"></i>
+    </div>
+</div>
+</body>
+</html>

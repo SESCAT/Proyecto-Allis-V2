@@ -1,0 +1,428 @@
+/* Aplicar Times New Roman a todo el documento como solicitaste */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Paleta de colores basada en la imagen */
+:root {
+    --gold: #b8976b;
+    --dark-bg: #1a1b1f;
+    --dark-card: #2a2c31;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--dark-bg) !important;
+}
+
+.border-gold {
+    border-left: 5px solid var(--gold) !important;
+}
+
+/* Hero Section con imagen de fondo oscura */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1505664177941-a0f12c140c11?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    margin-top: 56px; /* Compensar navbar */
+}
+
+/* Interactividad y Hover Effects */
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.02);
+}
+
+.example-box {
+    background-color: var(--dark-card);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.example-box:hover {
+    background-color: var(--gold);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.info-card {
+    transition: all 0.3s ease;
+    background-color: var(--dark-card);
+    border-radius: 8px;
+}
+.info-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border-color: var(--gold) !important;
+    transform: translateY(-5px);
+}
+
+/* Estilos de Acordeón Bootstrap Modificados */
+.accordion-button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f1ebd8;
+    color: #1a1b1f;
+}
+
+/* Sección de Procedimiento (Pasos) */
+.step-box {
+    background: white;
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.step-box:hover {
+    transform: scale(1.05);
+}
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+
+/* Tarjetas del Equipo */
+.team-card {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+.team-card:hover {
+    transform: translateY(-10px);
+}
+.team-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Animaciones de aparición (controladas por JS) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- HEADER MEJORADO --- */
+
+/* Efecto Parallax en el fondo */
+.hero-section {
+    min-height: 95vh; /* Lo hace un poco más alto para que luzca imponente */
+    background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat fixed; /* El 'fixed' hace el parallax */
+    position: relative;
+}
+
+/* Capa oscura sobre la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26,27,31,0.85) 0%, rgba(26,27,31,0.5) 100%);
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+/* Tarjeta tipo "Glassmorphism" (Efecto vidrio elegante) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05); /* Blanco muy transparente */
+    backdrop-filter: blur(12px); /* Desenfoca el fondo */
+    -webkit-backdrop-filter: blur(12px); /* Soporte para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Borde sutil */
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px); /* Flota un poco al pasar el mouse */
+    box-shadow: 0 20px 40px rgba(184, 151, 107, 0.25) !important; /* Sombra dorada suave */
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* Botones interactivos */
+.btn-gold {
+    background-color: var(--gold);
+    color: #1a1b1f;
+    font-weight: bold;
+    border: 2px solid var(--gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: var(--gold);
+    transform: scale(1.05); /* Se agranda un 5% */
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #1a1b1f;
+    transform: scale(1.05);
+}
+
+/* Animación de rebote para el indicador de scroll */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+}
+
+.letter-spacing {
+    letter-spacing: 3px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-15px); }
+    60% { transform: translateY(-7px); }
+}
+
+/* --- NUEVOS ESTILOS PARA LA LÍNEA DE TIEMPO --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* La línea vertical central */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--gold);
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    padding: 20px 0 20px 100px;
+    position: relative;
+}
+
+/* El círculo con el ícono */
+.timeline-icon {
+    position: absolute;
+    left: 28px; /* Centrado con la línea */
+    top: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 2;
+    border: 4px solid var(--dark-bg);
+    box-shadow: 0 0 10px rgba(184, 151, 107, 0.5);
+}
+
+.timeline-content {
+    position: relative;
+    border-left: 3px solid var(--gold);
+}
+
+/* Ajustes responsivos para celulares */
+@media (max-width: 768px) {
+    .timeline::after { left: 30px; }
+    .timeline-icon { left: 8px; width: 40px; height: 40px; font-size: 16px; }
+    .timeline-item { padding: 20px 0 20px 70px; }
+}
+
+/* Grosor de bordes para tarjetas verde/roja */
+.border-5 {
+    border-width: 5px !important;
+}
+
+
+
+/* --- CARRUSEL 3D DEL EQUIPO --- */
+.team-carousel-wrapper {
+    height: 480px; /* Altura del contenedor */
+    width: 100%;
+    max-width: 1000px;
+    perspective: 1000px; /* Le da el efecto de profundidad 3D a la sección */
+}
+
+.team-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Tarjeta Base */
+.team-card-3d {
+    width: 320px;
+    position: absolute;
+    /* La transición suave para cuando se mueven de posición */
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), 
+                opacity 0.6s ease, 
+                filter 0.6s ease, 
+                z-index 0.6s;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.team-card-3d img {
+    height: 320px;
+    object-fit: cover;
+}
+
+/* 1. Tarjeta Central (Activa, Iluminada, Grande) */
+.active-card {
+    z-index: 3;
+    transform: scale(1.15) translateX(0); /* Más grande y al centro */
+    opacity: 1;
+    filter: brightness(1.1); /* Ligeramente iluminada */
+    box-shadow: 0 20px 40px rgba(184, 151, 107, 0.5) !important; /* Resplandor dorado */
+}
+
+/* 2. Tarjeta Izquierda (Atrás, Pequeña, Oscura) */
+.prev-card {
+    z-index: 2;
+    transform: scale(0.85) translateX(-65%); /* Más pequeña y hacia la izquierda */
+    opacity: 0.6;
+    filter: brightness(0.3); /* Oscurecida */
+}
+
+/* 3. Tarjeta Derecha (Atrás, Pequeña, Oscura) */
+.next-card {
+    z-index: 2;
+    transform: scale(0.85) translateX(65%); /* Más pequeña y hacia la derecha */
+    opacity: 0.6;
+    filter: brightness(0.3); /* Oscurecida */
+}
+
+/* Botones Flechas de control */
+.carousel-control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(184, 151, 107, 0.1);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    z-index: 4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-btn:hover {
+    background: var(--gold);
+    color: var(--dark-bg);
+    transform: translateY(-50%) scale(1.1); /* El botón crece un poquito al pasar el mouse */
+}
+
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+
+/* Ajustes responsivos para celulares (Pantallas pequeñas) */
+@media (max-width: 768px) {
+    .team-carousel-wrapper { height: 400px; }
+    .team-card-3d { width: 220px; }
+    .team-card-3d img { height: 220px; }
+    /* En celulares juntamos más las tarjetas para que quepan */
+    .prev-card { transform: scale(0.8) translateX(-50%); }
+    .next-card { transform: scale(0.8) translateX(50%); }
+    .carousel-control-btn { width: 40px; height: 40px; font-size: 16px; }
+}
+
+
+
+
+
+/* --- CURSOR DE MARTILLO DE JUEZ --- */
+
+/* Ocultamos el cursor normal en toda la página de computadora */
+@media (min-width: 769px) {
+    body, a, button, .carousel-control-btn, .nav-link {
+        cursor: none !important; 
+    }
+}
+
+/* Estilos del martillo flotante */
+#gavel-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    pointer-events: none; /* IMPORTANTE: Para que no bloquee los clics reales a los botones */
+    z-index: 9999; /* Por encima de toda la página */
+    font-size: 28px;
+    color: var(--gold);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transform: translate(-10%, -10%); /* Ajusta el punto de clic a la cabeza del martillo */
+    transform-origin: bottom right; /* El eje de rotación será el mango del martillo */
+    transition: transform 0.08s ease-out; /* Transición súper rápida para simular el golpe */
+}
+
+/* La clase que simula el golpe cuando haces clic */
+.gavel-hit {
+    transform: translate(-10%, -10%) rotate(-45deg) !important;
+}
+
+/* Ocultar este cursor especial en celulares (ya que allí se usa el dedo, no el mouse) */
+@media (max-width: 768px) {
+    #gavel-cursor {
+        display: none !important;
+    }
+}
