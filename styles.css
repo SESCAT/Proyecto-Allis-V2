@@ -426,3 +426,54 @@ body {
         display: none !important;
     }
 }
+
+
+
+
+
+
+/* --- ESTILOS PARA LAS PESTAÑAS DE JURISPRUDENCIA --- */
+.custom-tabs .nav-link {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-tabs .nav-link:hover {
+    background-color: rgba(184, 151, 107, 0.1);
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.custom-tabs .nav-link.active {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+    font-weight: bold;
+    border-color: var(--gold);
+    box-shadow: 0 4px 15px rgba(184, 151, 107, 0.4);
+}
+
+/* Botón PDF */
+.btn-outline-gold {
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+    transform: scale(1.02);
+}
+
+/* Viñetas personalizadas para la lista */
+.custom-list li {
+    margin-bottom: 10px;
+}
