@@ -235,30 +235,110 @@
     </section>
 
     <!-- Jurisprudencia Destacada -->
-    <section id="jurisprudencia" class="py-5 bg-dark-custom text-white position-relative">
+    <section id="jurisprudencia" class="py-5 bg-dark-custom text-white position-relative border-top border-secondary">
         <div class="container py-5 fade-in">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 text-center">
-                    <i class="fa-solid fa-book-journal-whills fa-5x text-gold mb-3"></i>
-                    <h2 class="text-gold fw-bold">Jurisprudencia Importante</h2>
-                    <h4 class="text-light mt-3">Sentencia No. 107-17-SEP-CC</h4>
-                    <p class="text-light">Corte Constitucional del Ecuador</p>
-                </div>
-                <div class="col-lg-7">
-                    <div class="p-4 border border-gold rounded bg-dark shadow">
-                        <h5 class="text-gold mb-3"><i class="fa-solid fa-gavel me-2"></i>Importancia establecida por la Corte:</h5>
-                        <ul class="text-light">
-                            <li>El acceso a la información pública es un <strong>derecho fundamental</strong>.</li>
-                            <li>La regla general es la publicidad de la información.</li>
-                            <li>La reserva de información constituye una excepción y debe estar expresamente justificada.</li>
-                            <li>Las instituciones tienen la obligación de facilitar el acceso y no obstaculizarlo.</li>
-                        </ul>
-                        <hr class="border-secondary">
-                        <h5 class="text-gold mb-3 mt-3"><i class="fa-solid fa-eye me-2"></i>Alcance de la Garantía:</h5>
-                        <p class="fst-italic text-light">"Toda información en poder del Estado se presume pública, salvo las excepciones establecidas en la Constitución y la ley."</p>
-                        <p class="mb-0 text-muted small">Esto fortalece los principios de: Transparencia, Rendición de cuentas, Participación ciudadana y Control social.</p>
+            <div class="text-center mb-5">
+                <i class="fa-solid fa-scale-balanced fa-4x text-gold mb-3"></i>
+                <h2 class="text-white fw-bold text-uppercase letter-spacing">Jurisprudencia Vinculante</h2>
+                <div class="bg-gold mx-auto mt-2" style="height: 3px; width: 80px;"></div>
+                <p class="lead text-light mt-3">Precedentes fundamentales de la Corte Constitucional del Ecuador</p>
+            </div>
+
+            <!-- Navegación por Pestañas (Tabs) -->
+            <ul class="nav nav-pills justify-content-center mb-5 custom-tabs" id="jurisprudencia-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sentencia-nueva-tab" data-bs-toggle="pill" data-bs-target="#sentencia-nueva" type="button" role="tab" aria-controls="sentencia-nueva" aria-selected="true">
+                        <i class="fa-solid fa-star me-2"></i>Sentencia No. 29-21-JI (Vacunas COVID-19)
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sentencia-anterior-tab" data-bs-toggle="pill" data-bs-target="#sentencia-anterior" type="button" role="tab" aria-controls="sentencia-anterior" aria-selected="false">
+                        <i class="fa-solid fa-book-journal-whills me-2"></i>Sentencia No. 107-17-SEP-CC
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="tab-content" id="jurisprudencia-tabs-content">
+                
+                <!-- Pestaña 1: Sentencia 29-21-JI (NUEVA) -->
+                <div class="tab-pane fade show active" id="sentencia-nueva" role="tabpanel" aria-labelledby="sentencia-nueva-tab">
+                    <div class="row align-items-stretch">
+                        <!-- Columna Izquierda: Datos y Antecedentes -->
+                        <div class="col-lg-4 mb-4 d-flex flex-column">
+                            <div class="p-4 border border-gold rounded bg-dark shadow h-100 flex-grow-1">
+                                <h4 class="text-gold mb-3">Sentencia No. 29-21-JI y acumulado/21</h4>
+                                <ul class="list-unstyled text-light">
+                                    <li class="mb-2"><i class="fa-solid fa-calendar-days text-gold me-2"></i><strong>Fecha:</strong> 1 de diciembre de 2021</li>
+                                    <li class="mb-2"><i class="fa-solid fa-user-tie text-gold me-2"></i><strong>Juez ponente:</strong> Ramiro Ávila Santamaría</li>
+                                </ul>
+                                <hr class="border-secondary">
+                                <h6 class="text-gold"><i class="fa-solid fa-file-contract me-2"></i>Antecedentes:</h6>
+                                <p class="small text-light">La Defensoría del Pueblo accionó contra el Ministerio de Salud Pública exigiendo información sobre la vacunación COVID-19 (vacunas recibidas, listados, criterios y protocolos). La Corte seleccionó el caso por su gravedad, novedad y trascendencia nacional.</p>
+                                
+                                <!-- Botón al PDF -->
+                                <a href="https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/e2NhcnBldGE6J3RyYW1pdGUnLCB1dWlkOic0YjVjYmRkMC02NGQ0LTQ2NmQtYjhjZS03MDVlNTJkMWJjOWQucGRmJ30=" target="_blank" class="btn btn-outline-gold w-100 mt-auto shadow-sm">
+                                    <i class="fa-solid fa-file-pdf me-2"></i>Ver Sentencia Original
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Columna Derecha: Criterio y Alcance -->
+                        <div class="col-lg-8 mb-4 d-flex flex-column">
+                            <div class="p-4 border border-secondary rounded bg-dark shadow h-100 flex-grow-1">
+                                <h5 class="text-gold mb-3"><i class="fa-solid fa-gavel me-2"></i>Criterio Jurisprudencial (Vinculante)</h5>
+                                <ul class="text-light mb-4 custom-list">
+                                    <li>Toda información en poder del Estado se presume pública, salvo que exista una causa constitucional o legal que justifique su reserva.</li>
+                                    <li>Las entidades públicas tienen el deber de entregar información completa, veraz, oportuna y accesible.</li>
+                                    <li>La confidencialidad constituye una excepción y debe estar debidamente motivada; no puede invocarse de forma genérica.</li>
+                                    <li>Cuando existe un interés público relevante, debe privilegiarse el principio de máxima publicidad y la transparencia.</li>
+                                </ul>
+                                
+                                <hr class="border-secondary mb-4">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <h6 class="text-white"><i class="fa-solid fa-shield-halved text-gold me-2"></i>Alcance de la Garantía</h6>
+                                        <ul class="small text-light ps-3">
+                                            <li>El acceso es indispensable para el control ciudadano y la rendición de cuentas.</li>
+                                            <li>La transparencia permite ejercer la participación ciudadana y el control social.</li>
+                                            <li>Los jueces deben interpretar esta garantía favoreciendo el acceso y restringiendo solo por mandato constitucional o legal.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mb-3 border-start border-secondary">
+                                        <h6 class="text-white"><i class="fa-solid fa-lightbulb text-gold me-2"></i>¿Por qué es importante?</h6>
+                                        <p class="small text-light mb-0">Esta sentencia constituye jurisprudencia vinculante porque fue emitida dentro del proceso de selección y revisión. Por ello, el criterio fijado por la Corte Constitucional <strong>debe ser observado obligatoriamente por los jueces</strong> al resolver futuras acciones de acceso a la información pública.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Pestaña 2: Sentencia 107-17-SEP-CC (ANTERIOR) -->
+                <div class="tab-pane fade" id="sentencia-anterior" role="tabpanel" aria-labelledby="sentencia-anterior-tab">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="p-4 border border-gold rounded bg-dark shadow text-center text-md-start">
+                                <div class="text-center mb-4">
+                                    <h4 class="text-gold">Sentencia No. 107-17-SEP-CC</h4>
+                                    <p class="text-light">Corte Constitucional del Ecuador</p>
+                                </div>
+                                <h5 class="text-gold mb-3"><i class="fa-solid fa-gavel me-2"></i>Importancia establecida por la Corte:</h5>
+                                <ul class="text-light text-start">
+                                    <li>El acceso a la información pública es un <strong>derecho fundamental</strong>.</li>
+                                    <li>La regla general es la publicidad de la información.</li>
+                                    <li>La reserva de información constituye una excepción y debe estar expresamente justificada.</li>
+                                    <li>Las instituciones tienen la obligación de facilitar el acceso y no obstaculizarlo.</li>
+                                </ul>
+                                <hr class="border-secondary">
+                                <h5 class="text-gold mb-3 mt-3 text-start"><i class="fa-solid fa-eye me-2"></i>Alcance de la Garantía:</h5>
+                                <p class="fst-italic text-light text-start">"Toda información en poder del Estado se presume pública, salvo las excepciones establecidas en la Constitución y la ley."</p>
+                                <p class="mb-0 text-muted small text-start">Esto fortalece los principios de: Transparencia, Rendición de cuentas, Participación ciudadana y Control social.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
